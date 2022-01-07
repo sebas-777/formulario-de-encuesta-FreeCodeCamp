@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form </title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href = "https: //fonts.googleapis.com/css2? family = Yanone + Kaffeesatz: wght @ 500 & display = swap "rel =" stylesheet ">
+</head>
+<body>
+    <h1 id ="title">Space Travel</h1>
+    <p  id ="description">Fill details below to complete your Space Travel order</p>
+    <form id="survey-form" >
+       
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" name="name" placeholder="Elon Musk" required> </input>
+        
+        <br>
+        
+        <label for="email" id="email-label"> Email</label>
+        <input type="email" name="email" id="email" placeholder="travel@space.com" required></input>
+
+        <br>
+
+        <label for="number" id="number-label">Age</label>
+        <input type="number" name="number" id="number" placeholder="18" min="18" max="100" required></input>
+
+        <br>
+
+        <label for="dropdown" id="class"> Select class</label>
+        <select id="dropdown">
+            <option value="Class_A"> Class A </option>
+            <option value="Class_B"> Class B </option>
+            <option value="Class_C"> Class C </option>
+            <option value="Class_D"> Class D </option>
+            <option value="Cyber_Class"> Cyber Class </option>
+
+        </select>
+            <br>
+            <br>
+
+            <label for="ticket_type"> <b>Ticket :</b></label>
+            <br>
+
+            <input type="radio" name="type" id="one-way" value="one-way">
+            <label for="ticket_type"> one-way </label>
+            <br>
+
+            <input type="radio" name="type" id="round-trip flight" value="round-trip flight">
+            <label for="ticket_type">round-trip flight</label>
+            <br>
+            
+            
+            <label for="features"> <b>Add features: </b></label>
+            <br>
+            <input type="checkbox" name="features" id="checkbox" value="closed_capsule">
+            <label for="checkbox">Closed capsule - $1.000.000</label>
+            <br>
+            <input type="checkbox" name="features" id="checkbox" value="capsule_360">
+            <label for="checkbox">Capsule with a 360 degree view - $10.000.000</label>
+            <br>
+            <input type="checkbox" name="features" id="checkbox" value="cockpit">
+            <label for="checkbox"> Cockpit - $20.000.000</label>
+            <br>
+            
+            <label id="textarea"> Additional Comments</label>
+            <br>
+            <textarea name="instructions" id="textarea" cols="40" rows="5">
+
+            </textarea>
+            <br>
+
+            <input id ="submit" type="submit" value="Place Order">
+    </form>
+</body>
+</html>
